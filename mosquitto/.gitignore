@@ -1,0 +1,12 @@
+**.o
+**.so
+**.so.1
+**mosquitto
+**.nsi
+**db_dump
+**mosquitto_pub
+**mosquitto_sub
+**.a
+**.pyc
+lib/python/build/*
+

@@ -1,0 +1,21 @@
+v1.0.1
+======
+
+- Fix incorrect reconnect that occurred if calling loop_stop() before
+  disconnect().
+
+v1.0
+====
+
+- Default protocol is now MQTT v3.1.1.
+- Client will reconnect using MQTT v3.1 if a v3.1.1 connection fails due to
+  the incorrect protocol version number.
+- All strings are now correctly encoded as utf-8.
+- Add support for "session present" flag in on_connect callback.
+
+v0.9.1
+======
+
+- Fix CONNECT packet for MQTT v3.1.1.
+- Fix potential lockup when publishing from on_publish callback.
+- Add version information to paho.mqtt.__version__
